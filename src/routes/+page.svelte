@@ -23,7 +23,7 @@
   setSpeed();
 </script>
 
-<div class="h-screen flex items-center justify-center">
+<div class="h-screen flex items-center justify-center p-4">
   <div class="w-full max-w-sm">
     <h1
       class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6x"
@@ -41,7 +41,7 @@
           ⌀ Kilometerzeit / Pace (min)
         </label>
         <input
-          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          class="text-3xl shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           bind:value={pace}
           on:input={() => (setTimes(), setSpeed())}
           type="float"
@@ -56,7 +56,7 @@
           ⌀ Geschw. (km/h)
         </label>
         <input
-          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          class="text-3xl shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           bind:value={speedKMH}
           on:input={() => setTimes()}
           type="float"
@@ -72,7 +72,7 @@
           Strecke (km)
         </label>
         <input
-          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          class="text-3xl shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           bind:value={km}
           on:input={() => setTimes()}
           type="float"
@@ -107,7 +107,7 @@
             Zeit (min:sec)
           </label>
           <input
-            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            class="text-3xl shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             bind:value={time}
             type="text"
             placeholder="Deine Gesamt Zeit"
@@ -121,7 +121,7 @@
             Zeit (h:min)
           </label>
           <input
-            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            class="text-3xl shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             bind:value={timeHour}
             type="text"
             placeholder="Deine Gesamt Zeit"
@@ -130,7 +130,9 @@
       </div>
     </form>
     <a href="https://guder-service.com/impressum">
-      <p class="text-center text-gray-500 text-xs">&copy;2024 Guder-Service</p>
+      <p class="text-center text-gray-500 text-xs">
+        &copy;2024 💚 Guder-Service
+      </p>
     </a>
   </div>
 </div>
